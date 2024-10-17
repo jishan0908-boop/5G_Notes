@@ -1,7 +1,9 @@
 # 5G_Notes
 About , wireless communication and how it works 
 
-# Chapter 1 : Standardization
+# Chapter 1 : The 5G System
+# 1.  Standardization
+
 The motive to make the standardization of techonolgy was come , because of some difficulties , like : 1. It was tough for any one if he or she tarvel to differnt country and found differnt technologies . 2. It was expensive also that to coop-up with other country technoloy .
 Because of these problems , we have to come=up with the ideas of standardization which  helps to bring the nations togethere.
 
@@ -61,7 +63,38 @@ The standards are given byu ITU , but to full fill these requierment , 3GPP(3rd 
 ## Relation between ITU & 3GPP :
 Where ITU give evalution and requiremnet to 3GPP , where 3GPP start evaluations and solutions for the requirements , check the systems working and evalution and studies the requirements needed to full fill , then after complition it handed to IMT 2020 Specification where they check that , it is full filling the requirement or not.
 
+# 2. The 5G Use Cases 
+## What are the use cases that 5G is design fo ?
 
+This quite difficult to define the feature that will sevreve use cases of 5G.
 
+BUT  WE HAVE A 3D PYRAMIND WHICH COVERS SOME ASPECTS 
+1. ENCHANCED MOBLIE BORADBAND
+2. MASSIVE MACHINE TYPE COMMUNICTAIONS
+3. ULTRA-RELIABLE AND LOW LATENCY COMMUNICATIONS
+
+## ENCHANCED MOBLIE BORADBAN
+This is the first use case , where it handles moblies or network traffics in bulk. The traffics of videos , where in 4G we use to use HD qualtiy videos but, In 5G we can see videos in 4K/8K quality , 3D videos or may be Virtual Reality , to watch such a videos  we need more capable network like 5G.
+Things that are needed to Achive are:
+1. Peak Data Rate : Where we need 20Gbps(Downloading link ) and 10Gbps(Uploading link).
+2. Peak Spectrum Efficency : This is  important because to wider the broadband width more user can use it , where it needs 30 bps/Hz (Downloading link) and 15 bps/Hz ( Uploading link).
+3. User experienced data rate  : It will defines the speed of the data transfer to the user 100 Mbps (Downloading link) and 50 Mbps (Uploading link).
+4. Mobility : If the user is travelling with a high speed he need a fast data speed which is Up to 500 Km/h.
+5. Energy Efficency : This is also one of the important aspcets becauise we cannot increase the battery size , of our moblie so we need to work , on that 5G use less energy .
+6. More use cases like , in Smart Phones, Home , venues and enterprises and ( 4k / 8k videos , UHD , Broadbands etc.)
+ ## MASSIVE MACHINE TYPE COMMUNICTAIONS
+ This case need very little data and very less frequently , but need long battery life . This type of case we can see in smart cities where , we take and example like garbage trash cans, when they are filled a signal or data is to be trannsfer to the depeartment like a 1 bit data , which can then empty the trash cans but need longer battery so that it work for years.
+Things that are needed to Achive are:
+1. Density: The density here means , to cover more are of user , like 1000000 devices per sq Km2.
+2. Battery: The battery life is most important aspect of this case we , need battery life  upto 10-15 years.
+3. Low Data Rate: As we see the above example , we have to transfer 1 bit data or max to 100kbps.
+4. More use cases like, Smart Buildings , Logistics , tracking , smart electercity meter needs ( also we need to wrok like , we these meter are in basement the data should transfer properly), Industrial application etc.
+
+## ULTRA-RELIABLE AND LOW LATENCY COMMUNICATIONS
+This case is also an important case where we need , high reliablity and low latency nearly 100% and garenty of data .Example like , self driving cars , cars should be connected to each other so that they can communicate with each other , and share 100% of data so that chnaces of accidents can be reduces.
+Things that are needed to Achive are:
+1. Low User Plane Latency : This need of 1 mili second . The data should be transfer very fast .
+2. Low Reliablity: This should be need upto 99.9999% so that chances of accidents can be reduce.
+3. Mobility Interruption Time : This is needed to 0ms .
+4. More use cases like, Traffic safety , Remote manufacturing , training , surgery etc.
    
-
