@@ -47,5 +47,17 @@ International Mobile Telecommunications-2020 (IMT-2020 Standard) are the require
 
 
 # 2. Who actually designs 5G:
+
+The standards are given byu ITU , but to full fill these requierment , 3GPP(3rd Generation Partnership Project) , which works to exceute 5G technology , also there is competive group present 3GPP2( 3rd Generation Partnership Project 2 ) which is developing and alter native solutions . But , in 5G 3GPP has made more succses . 
+
+## 3GPP: 
+ 3rd Generation Partnership Project   , have is the organisation of several differnt countries like , Japan , United Nation of America , India  ,China , South Korea , Europe and some Private oraginsation which work together to achive these requirments.
+
+3GPP has sub three division which works on three diffrent projects:
+1. T5G RAN( Radio Access Network)
+2. T5G CT(Core Network & Terminals)
+3. T5G ST( Service & Systems Aspects)
+
+
    
 
