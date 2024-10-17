@@ -129,6 +129,9 @@ The rest of the core network function communicate with each other as a microserv
 ## SECOND FROM: SERVICE BASE  REPRESENTATION
 
 ![second point](https://github.com/user-attachments/assets/686c22b7-0264-4ad9-929e-567f029bc662)
+
+
+
 Since,  5G uses services base architecture.
 We have different ends of devices using , 5G network  on one end at the 5G user, Massive MTC is present , which are the large number of devices which send very little data, if these kind of devices are dominate the network then , there we have to scale control signals infrastucture . On the other hand we have Moblie Broadband devices which creates the large demands in the user plane functions , than the control signal plane , because there is lot if data if , there are only fewer devices . So these devices are dominating than we need to scale the user plane function not control plane signals . So if there is no separation in user and control plane functions , then we would end up scaling that loads , handling both user and control plane , which is inefficent way of scaling .
 We separate with the demanding of user or control plane function which is needed to scale. Separating these , then give freedom to apply differnt function in different geographical region.
