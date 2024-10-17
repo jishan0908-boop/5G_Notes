@@ -227,6 +227,20 @@ Smilarly in this option we have Core Network of 4G  and 5G Radio Access Technolo
 ![option 6](https://github.com/user-attachments/assets/e1985de7-d5d3-4240-8dfa-cf627fd18a5d)
 
 ## OPTION 7 NG-EN-DC :
+In this option we have Core Network of 5G , where Master Radio Access Technology is 4G eLTE and Secondary Radio Access Technology is 5G gNodeB. 
+
+![option 7](https://github.com/user-attachments/assets/feafb821-1c51-4c41-b49e-b6be29fa6cfc)
+
+## NON STANDALONE ( NSA ) AND STANDALONE ( SA ) DEPLOYMENTS:
+
+Where we have a sinlge technology in both Radio Access Netwrok and in Core Network , that is called as Standalone deploymenet .
+Example : Option 1 and Option 2.
+
+Where we have a combinations of 4G & 5G Technology in Radio Access Netwrok and in Core Network , that is called as Non-Standalone deployment.
+Example : Option 3 , Option 4 and Option 7.
+
+
+
 
 
 
