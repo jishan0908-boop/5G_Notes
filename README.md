@@ -97,4 +97,64 @@ Things that are needed to Achive are:
 2. Low Reliablity: This should be need upto 99.9999% so that chances of accidents can be reduce.
 3. Mobility Interruption Time : This is needed to 0ms .
 4. More use cases like, Traffic safety , Remote manufacturing , training , surgery etc.
-   
+
+# THE 5G SYSTEM 
+To understand how 5G system works , in video we have given an example , where there is user's smartphone which is searching somethings on google .
+were their are three stages or sets, rule we can say from which they can access the google .
+1. Access Network
+2. Core Network
+3. Data Network
+
+## Access Network:
+5G Radio Access Network , which is based on a technology called as New Radio or NR , it's responsible for providing Wwireless communication to the device.
+
+## Core Network:
+The core network in this case us 5G network , responsible for the mobility management , subscription management and secuirty management.
+
+## Data Network:
+This is simply the internet in this case.
+
+![NETWORK WORKING](https://github.com/user-attachments/assets/76b26962-05f8-4a90-9970-30d654590661)
+
+N2 : Here N2 , control the communication  with AMF.
+N3 : Here N3 , is the Data Plane Communicate with UPF.
+N4 : Here N4 , establish the communication with UPF & SMF.
+
+The rest of the core network function communicate with each other as a microservices.
+
+## The 5G Network can be represented in two forms:
+## FIRST FORM: REFERENCE POINT REPRESENTATION
+![refernce point](https://github.com/user-attachments/assets/a43134e5-961b-444b-8133-059d817dbb16)
+
+## SECOND FROM: SERVICE BASE  REPRESENTATION
+Since,  5G uses services base architecture.
+![second point](https://github.com/user-attachments/assets/686c22b7-0264-4ad9-929e-567f029bc662)
+
+We have different ends of devices using , 5G network  on one end at the 5G user, Massive MTC is present , which are the large number of devices which send very little data, if these kind of devices are dominate the network then , there we have to scale control signals infrastucture . On the other hand we have Moblie Broadband devices which creates the large demands in the user plane functions , than the control signal plane , because there is lot if data if , there are only fewer devices . So these devices are dominating than we need to scale the user plane function not control plane signals . So if there is no separation in user and control plane functions , then we would end up scaling that loads , handling both user and control plane , which is inefficent way of scaling .
+We separate with the demanding of user or control plane function which is needed to scale. Separating these , then give freedom to apply differnt function in different geographical region.
+
+## KEY NETWORK FUNCTIONS:
+
+## 1. gNodeB : 
+The main function of gNodeB , is to provide wireless connectiviy in 5G devices , in an efficent manner.
+
+## 2. UPF :
+The main function of UPF , is to provides interface towards internet . This is good place  to enforcing polcies to ensure the devices doesn't exceeds the data . Also we can call it , the mobility , anchoring point for enforcement of polices and lawful interception .
+
+## 3. SMF :
+Session Mangaemenet  Function , it gives the device an IP Address when the device has finshed the activity . 
+
+## 4. AMF :
+Access and Mobility Function, it forwards the sessions releated information to SMF. The primary responsiblty for supporting the devices to move between two radio cells in addition , it is responsible for the establishing the encrypted signals connection towards the devices . so that the device can be registered itself , and get authenticate , so that it sis ready to accsess on internet.
+
+## 5. AUSF :
+Actual Security information Algorithms . This is the part of authentication Server function or , ASUF which support the AMF with the authencated function during the different process.
+
+## 6. UDM :
+Unified Data Management and Unified Data Repositroy . The User Subscription Data is stored in Unified Data Repository . UDM is the forntend of the user subscription data . it support AMF  in access of the Autherisation , registor management for the devices etc.
+
+## 7. PCF :
+Policy Control Function , Charging related function depending on the usage by the device.PCF provides two kind of policies support . first , the policy related to Session Management , for example , certain kind of traffices is supported or not supported and Second policy is related to non session management they are like mobility policy . example , the device may not have rights to access the network in certain geographical area.
+
+
+
