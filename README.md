@@ -159,5 +159,73 @@ Unified Data Management and Unified Data Repositroy . The User Subscription Data
 ## 7. PCF :
 Policy Control Function , Charging related function depending on the usage by the device.PCF provides two kind of policies support . first , the policy related to Session Management , for example , certain kind of traffices is supported or not supported their and Second policy is related to non session management they are like mobility policy example , the device may not have rights to access the network in certain geographical area.
 
+# 5G DEPLOYMENT OPTIONs
+
+## OPTION 1:
+For the perspective of 5G & 4G , can be consider as the legacy option , first we have eNodeB which is connected to EPC( 4G Core ).
+![option 1](https://github.com/user-attachments/assets/0a363dca-5000-402d-8ea8-096fe7cd145a)
+
+
+## OPTION 2:
+When we have 5G Radio Access Network ,connected to 5G Core network is the option 2 , it is useful for those operator who does not have the legacy of 4G netwrok.
+![option 2](https://github.com/user-attachments/assets/04d02d82-5683-49dc-bb6e-e4bf5a41e914)
+
+
+## OPTION 3: EN-DC ( E-UTRAN NEW RADIO - DUAL CONNECTIVIYTY )
+Both 4G & 5G exist , this is when a smartphone is connected to ,two differnt techonoly , it is called Dual-Connectivity , Because it is connected to two Radio Acces Network .
+
+In the elustration we have a smartphone which is connected to both eNodeB and gNodeB, in such a situation , one Access technology is known as Mater Radio Access Technology and other is called Secondary Radio Access Technology .
+
+The Radio Network with provide control signaling is called Master Radio Access Technology and other which is use for data things is Secondary Radion Access Technology. We know 4G as primary and 5G as secondary and  the Core Network us the 4G Core network , The option is particularly relevant to the operator who does not have 5G Core Network . But want to use 5 Network then they has 5G RAN .
+
+## OPTION 3 IS ALSO SUB-DIVIDED INTO THREE PARTS 3 , 3a ,3x :
+
+## 3 :
+In this option the core network is of 4G , where the data is transfer to directly to the eNodeB , and then subsituit into two part on goes to the gNodeB and other to smartphones . Here we have tri-netwrok circut of data transfer where data can be transfer to eNodeB to gNodeB or vica versa .
+
+![3 1](https://github.com/user-attachments/assets/d828e4bb-4a79-4ecb-8e75-e674e4ecdd83)
+
+## 3a :
+In this option the core netwrok is of 4G , where in this option that data is directly transfer to the 5G RAN and there is no data transfer between , 4G and 5G RAN .This is a disadvantage because , the data cannot be share between 4G AND 5G RAN .
+
+![3a](https://github.com/user-attachments/assets/39e57dbc-b641-4bcf-99d1-79046987a164)
+
+## 3x :
+Tn this option , it is the proper example of option 3 , which have all the same property of option 3.
+
+![option 3](https://github.com/user-attachments/assets/a8795e80-0df1-48d0-b597-f26748a32850)
+
+
+## OPTION 4 NE-DC :
+In this option the Core Network is of 5G and the Master Radio Access Technology is gNodeB and Secondary Radio Access Technology is eNodeB .This option also have two sub-parts.
+
+
+![option 4](https://github.com/user-attachments/assets/78afe20d-2b0b-4a5e-9d71-6d8714df750c)
+
+
+## 4 :
+In this option there is a tri-circut connection between gNodeB , eNodeB and smartphone . Where data can be transfer between gNodeB to eNodeB and vica versa .
+
+
+![4, 1](https://github.com/user-attachments/assets/75fe6103-f34e-40e2-96ba-4dac68d1e0cf)
+
+## 4a :
+In this option there is no tri-connection , the data is directly transfer form 5G Core Netwrok to eNodeB . This is a disadvantage options , because the data is not circulate between RAN.
+Also , in this case 4G access should be dirsctly connected to 5G Core Network , because of  some 5G polices , So therefore We have to update the software of 4G Base Station.
+
+
+![4a](https://github.com/user-attachments/assets/23b1fb92-693b-441c-89af-f702e7bf0d2d)
+
+## OPTION 5:
+There 4
+
+
+
+
+
+
+
+
+
 
 
