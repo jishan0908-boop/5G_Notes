@@ -133,8 +133,8 @@ The rest of the core network function communicate with each other as a microserv
 
 
 Since,  5G uses services base architecture.
-We have different ends of devices using , 5G network  on one end at the 5G user, Massive MTC is present , which are the large number of devices which send very little data, if these kind of devices are dominate the network then , there we have to scale control signals infrastucture . On the other hand we have Moblie Broadband devices which creates the large demands in the user plane functions , than the control signal plane , because there is lot if data if , there are only fewer devices . So these devices are dominating than we need to scale the user plane function not control plane signals . So if there is no separation in user and control plane functions , then we would end up scaling that loads , handling both user and control plane , which is inefficent way of scaling .
-We separate with the demanding of user or control plane function which is needed to scale. Separating these , then give freedom to apply differnt function in different geographical region.
+We have different ends of devices using  5G network  on one end at the 5G user, Massive MTC is present , which are the large number of devices which send very little data, if these kind of devices are dominate the network then , there we have to scale control signals infrastucture . On the other hand we have Moblie Broadband devices which creates the large demands in the user plane functions because there is lot if data if , but there are only fewer devices , so these devices are dominating than we need to scale the user plane function not control plane signals . So if there is no separation in user and control plane functions , then we would end up scaling the loads handling to both user and control plane , which is inefficent way of scaling .
+We separate with the demanding of user or control plane function which one is  needed to scale. Separating these , give freedom to apply differnt function in different geographical region.
 
 ## KEY NETWORK FUNCTIONS:
 
@@ -148,7 +148,7 @@ The main function of UPF , is to provides interface towards internet . This is g
 Session Mangaemenet  Function , it gives the device an IP Address when the device has finshed the activity . 
 
 ## 4. AMF :
-Access and Mobility Function, it forwards the sessions releated information to SMF. The primary responsiblty for supporting the devices to move between two radio cells in addition , it is responsible for the establishing the encrypted signals connection towards the devices . so that the device can be registered itself , and get authenticate , so that it sis ready to accsess on internet.
+Access and Mobility Function, it forwards the sessions releated information to SMF. The primary responsiblty for supporting the devices to move between two radio cells in addition , it is responsible for the establishing the encrypted signals connection towards the devices . so that the device can be registered itself , and get authenticate , so that it is ready to accsess on internet.
 
 ## 5. AUSF :
 Actual Security information Algorithms . This is the part of authentication Server function or , ASUF which support the AMF with the authencated function during the different process.
@@ -157,7 +157,7 @@ Actual Security information Algorithms . This is the part of authentication Serv
 Unified Data Management and Unified Data Repositroy . The User Subscription Data is stored in Unified Data Repository . UDM is the forntend of the user subscription data . it support AMF  in access of the Autherisation , registor management for the devices etc.
 
 ## 7. PCF :
-Policy Control Function , Charging related function depending on the usage by the device.PCF provides two kind of policies support . first , the policy related to Session Management , for example , certain kind of traffices is supported or not supported and Second policy is related to non session management they are like mobility policy . example , the device may not have rights to access the network in certain geographical area.
+Policy Control Function , Charging related function depending on the usage by the device.PCF provides two kind of policies support . first , the policy related to Session Management , for example , certain kind of traffices is supported or not supported their and Second policy is related to non session management they are like mobility policy example , the device may not have rights to access the network in certain geographical area.
 
 
 
