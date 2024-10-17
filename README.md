@@ -58,6 +58,10 @@ The standards are given byu ITU , but to full fill these requierment , 3GPP(3rd 
 2. T5G CT(Core Network & Terminals)
 3. T5G ST( Service & Systems Aspects)
 
+## Relation between ITU & 3GPP :
+Where ITU give evalution and requiremnet to 3GPP , where 3GPP start evaluations and solutions for the requirements , check the systems working and evalution and studies the requirements needed to full fill , then after complition it handed to IMT 2020 Specification where they check that , it is full filling the requirement or not.
+
+
 
    
 
