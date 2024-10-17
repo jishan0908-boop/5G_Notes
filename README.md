@@ -216,8 +216,20 @@ Also , in this case 4G access should be dirsctly connected to 5G Core Network , 
 
 ![4a](https://github.com/user-attachments/assets/23b1fb92-693b-441c-89af-f702e7bf0d2d)
 
-## OPTION 5:
-There 4
+## OPTION 5 eLTE:
+There 4G Radio Access Technology with and enhanced version and it is directly to the 5G Core Network .
+
+![option 5](https://github.com/user-attachments/assets/cc564405-37d6-4fb0-a79e-d1398f29b567)
+
+## OPTION 6:
+Smilarly in this option we have Core Network of 4G  and 5G Radio Access Technology . But there is some issue , However during standardization process of 5G device , they will not support this configuration , there is noway that the device can have connection to 5G gNodeB which has only access to 4G Core Network , so the option is no longer relevant.
+
+![option 6](https://github.com/user-attachments/assets/e1985de7-d5d3-4240-8dfa-cf627fd18a5d)
+
+## OPTION 7 NG-EN-DC :
+
+
+
 
 
 
