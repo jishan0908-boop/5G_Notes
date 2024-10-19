@@ -245,12 +245,58 @@ Example : Option 3 , Option 4 and Option 7.
 There are two RAN Protocol Stack :
 
 1. User Plane Protocol Stack .
-2. Control Plane Protocol Stack .
+
+   The User Plane Protocol Stack supports or the arriving of the user data between different application in UE and Netwrok.
+   
+3. Control Plane Protocol Stack .
+
+   The Control Plane Protocol Stack can been seen carrying control information in between UE and to gNodeB or to Core Network.
+    
 
 ![Screenshot 2024-10-19 142201](https://github.com/user-attachments/assets/fd5420dd-84d2-413d-8bfc-07cc3397506f)
 
 
 ## User Plane Protocol Stack 
+
+![upps](https://github.com/user-attachments/assets/bd94de7e-09fd-4c9c-981b-084005956076)
+
+
+Each layer provide services to above layer and consumes the services of below layer .
+
+Example: RLC provides services to PDCP and uses the services of MAC.
+
+## PHY : 
+PHY ( Physical ) , this is the efficent way of wireless coommunication . Here , Bits and Bytes are transimited efficently passing through Wwireless Channels.
+
+## MAC :
+MAC ( Medium Access Control ) , it provide retransmission (looking for errors) , multiplexing.demultiplexing , scheduling and also , provides fast feedbacks to error .
+
+## RLC :
+RLC ( Radio Link Control ) ,  where ARQ represents breaking up of complete data  into IP packets in small packet , this process is called Segmentation. In the transmission side and putting  them back togethere , this process is called reassembly .
+
+## PDCP :
+PDCP ( Packet Data Convergence Protocol ) , in this layer IP packets are design for user communication over a wireless communcation , so certain precautions should be taken , first the IP Header has a lot of information that is no longer necessary so Header IP is compressed . 
+
+## SDAP :
+SDAP ( Service Data Adaptation Protocol ) , it is responsible for the mapping of QoS bearer into the right radio bearer according to QoS requirement .
+
+![1](https://github.com/user-attachments/assets/80ddbf2c-d667-451f-90a1-c064332f8dfc)
+
+![example](https://github.com/user-attachments/assets/16889cde-e2f0-4388-8323-94baa9472c53)
+
+## Control Plane Protocol Stack 
+
+![cpps](https://github.com/user-attachments/assets/0445551c-d807-4a7e-9cea-ddde30b6de7e)
+
+## NAS :
+NAS ( Non-Access Stratum ) , Authentication , Security , Idel mode procedures .
+
+## RRC : 
+RRC ( Radio Resource Control ) , System information , Radio Bearer , Measuerment configuration .
+
+
+
+
 
 
 
