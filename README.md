@@ -239,7 +239,17 @@ Example : Option 1 and Option 2.
 Where we have a combinations of 4G & 5G Technology in Radio Access Netwrok and in Core Network , that is called as Non-Standalone deployment.
 Example : Option 3 , Option 4 and Option 7.
 
+# Chapter 2 : 5G NR( NEW RADIO ): RAN ( RADIO ACCESS NETWORK ) gNodeB
 
+## PAN Protocol Stack 
+There are two RAN Protocol Stack :
+
+1. User Plane Protocol Stack .
+2. Control Plane Protocol Stack .
+</br>
+![Screenshot 2024-10-19 142201](https://github.com/user-attachments/assets/c62a1f6b-f733-4c27-8ba2-422ce844ce56)
+</br>
+## User Plane Protocol Stack 
 
 
 
