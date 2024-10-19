@@ -327,6 +327,19 @@ Delay Critical , are use for machein critical application , ex self driving robo
 
 ![7](https://github.com/user-attachments/assets/bb53725a-2eca-4b51-b1de-c13e8b91fdad)
 
+In the above image we can see , that the Application and Network are the one who can see the IP Addresses.
+## Multiplexing :
+1. When packets arrives at the UPF it maps the IP Flow into a certain QoS Flow , with a corresponding QFI , which depends upon the priorty of the application that what should get .
+2. When packets arrives at the gNodeB , the SDAP  layer maps IP Address the packets with corresponding QFI to the appropiate data rate radio bearer .
+
+![8](https://github.com/user-attachments/assets/818da98e-d626-4c78-9bc3-710d644924f4)
+
+## Reflective Mapping :
+When the device uses the same QoS Flow radio bearer in Uplink as same in Downlink , it is called reflective mapping because Uplink reflects Downlink.
+
+## Explicit Mapping :
+When the device configure to use a specfic QoS Flow and Uplink bearer through RRC signaling , then it is called Explicit mapping , because here the device is explicitly told to use certain bearer and certain QoS Flow in Uplink and reversely configured in Downlink.
+
 
 
 
