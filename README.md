@@ -294,6 +294,37 @@ NAS ( Non-Access Stratum ) , Authentication , Security , Idel mode procedures .
 ## RRC : 
 RRC ( Radio Resource Control ) , System information , Radio Bearer , Measuerment configuration .
 
+# SDAP ( Service Data Adaptation Protocol ) :
+
+5G , Supports variety of Services .
+
+![2](https://github.com/user-attachments/assets/3205331b-5c36-407d-a490-c53be881723f)
+
+## QoS : 
+Ability to provide different priority to different application , users or data flows or to guarantee a certain level of performace
+
+## Qos flows : QFI : 
+Packets are classified and marked using an ID called QOS identifier or QFI ; using these packets with certain QFI can recieve cooresponding treatment used to differentiate package from different kinds of services
+
+![3](https://github.com/user-attachments/assets/a6884eeb-e327-4904-8ad0-044869be73d8)
+
+# QoS Flow are of Three types :
+
+![4](https://github.com/user-attachments/assets/1688e4b8-e63e-4b73-a1dd-8c44467a892c)
+
+## GBR :
+GBR ( Guarenteed Bitrate ) , voice comm requires GBR so voice doesnt get disrupted.
+
+## NGBR :
+NGBR ( Non-Guarenteed Bitrate ) , browseing required NGBR , because in browseing traffices are more busty in nature .
+
+## Delay Critical :
+Delay Critical , are use for machein critical application , ex self driving robots etc.
+
+
+
+
+
 
 
 
