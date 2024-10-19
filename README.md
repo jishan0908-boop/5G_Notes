@@ -340,6 +340,7 @@ When the device uses the same QoS Flow radio bearer in Uplink as same in Downlin
 ## Explicit Mapping :
 When the device configure to use a specfic QoS Flow and Uplink bearer through RRC signaling , then it is called Explicit mapping , because here the device is explicitly told to use certain bearer and certain QoS Flow in Uplink and reversely configured in Downlink.
 
+![9](https://github.com/user-attachments/assets/1af742a0-6cce-4ad9-ba6f-2b56184c1a99)
 
 
 
