@@ -321,6 +321,13 @@ NGBR ( Non-Guarenteed Bitrate ) , browseing required NGBR , because in browseing
 ## Delay Critical :
 Delay Critical , are use for machein critical application , ex self driving robots etc.
 
+![5](https://github.com/user-attachments/assets/078b5a47-b8cc-4919-a90a-a17a7c9ef04b)
+
+![6](https://github.com/user-attachments/assets/0430e40d-0446-464b-b25b-946736e0a725)
+
+![7](https://github.com/user-attachments/assets/bb53725a-2eca-4b51-b1de-c13e8b91fdad)
+
+
 
 
 
