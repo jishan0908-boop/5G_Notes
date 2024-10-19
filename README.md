@@ -246,9 +246,10 @@ There are two RAN Protocol Stack :
 
 1. User Plane Protocol Stack .
 2. Control Plane Protocol Stack .
-</br>
-![Screenshot 2024-10-19 142201](https://github.com/user-attachments/assets/c62a1f6b-f733-4c27-8ba2-422ce844ce56)
-</br>
+
+![Screenshot 2024-10-19 142201](https://github.com/user-attachments/assets/fd5420dd-84d2-413d-8bfc-07cc3397506f)
+
+
 ## User Plane Protocol Stack 
 
 
