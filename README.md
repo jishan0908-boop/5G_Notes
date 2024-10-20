@@ -533,6 +533,16 @@ that is the transmitor transmite the data unit and wait for feedback if the  rec
 
 
 
+# SCHEDULER :
+
+The job of the scheduler is to determine which device should use time frequency and th e anteena resources  that is the main function .
+Offically a scgheduler is the part of MAC layer. but we treat is different entity because it intract woth different layers for to carry out its function and also controls the different layers carryouter function .
+
+![24](https://github.com/user-attachments/assets/f99329b6-b9fd-45ea-bb6e-fa776589a475)
+
+
+## DOWNLINK SCHEDULING :
+
 
 
 
