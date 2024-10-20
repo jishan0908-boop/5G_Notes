@@ -618,7 +618,14 @@ So after the ldpc coding process , rate matching takes the coded bits extract th
 ## LAYER MAPPING :
 ![9](https://github.com/user-attachments/assets/ba4521aa-9768-49de-9a10-01b53e623d89)
 
+## ANTENNA MAPPING AND PRECODING  :
+After mapping different layers next , step is to map it to the corresponding virtual antenna ports ,
+![10](https://github.com/user-attachments/assets/ffa70881-ae26-44cd-adbd-f480e0260899)
 
+## RESOURCE AND PHYSICAL ANTENNA  MAPPING :
+![11](https://github.com/user-attachments/assets/8095eff4-9af2-4b6c-9b24-c214c906540b)
 
+## OFDM , DAC ,RF :
+![12](https://github.com/user-attachments/assets/eb128973-f764-478d-9e69-ad6217c8d19f)
 
 
