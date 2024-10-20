@@ -143,7 +143,7 @@ The main function of gNodeB , is to provide wireless connectiviy in 5G devices ,
 
 ## 2. UPF :
 The main function of UPF , is to provides interface towards internet . This is good place  to enforcing polcies to ensure the devices doesn't exceeds the data . Also we can call it , the mobility , anchoring point for enforcement of polices and lawful interception .
-
+ 
 ## 3. SMF :
 Session Mangaemenet  Function , it gives the device an IP Address when the device has finshed the activity . 
 
