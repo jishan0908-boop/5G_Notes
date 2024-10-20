@@ -573,10 +573,13 @@ Based on this information the scheduler do the scheduling to the different devic
 
 ![33](https://github.com/user-attachments/assets/e824328f-e106-486d-8f0a-abc602d75c8a)
 
+# PHYSICAL LAYER :
 
+* So far the MAC layer constructed the transport block that inclueds both the data and control element , so know the job of the physical layer is to transmit the transport block to the wireless channel as efficently as possible , the physical layer does this by function like codeing modulation , multi-anteena processing and by mapping the signals to the apporpaite time and frequency resources .
 
+![1](https://github.com/user-attachments/assets/193e972e-86bc-487d-9ba5-5fef1a471c1b)
 
-
+1. PBCH : This is used by devices to access the network.
 
 
 
