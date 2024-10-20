@@ -567,5 +567,19 @@ In NR we have carries which are upto 100 MHz band width  , so this is a large ba
 * It is also loacted to the gNodeB . First we need to know the characterstics of the uplink link channel .also the buffer status has to be shared with the gNodeB.
 Based on this information the scheduler do the scheduling to the different devices .that we a particular devuces can transmite and what particular resources can be transmite . this scheduling in formation is known as scheduling grant .
 
+* Based on the SRS the gNodeB can estemate the channel quality experience in uplink to the corresponding devices . there is one difference in SRS and CSI-RS , that is SRS supports only max 4 anteena ports where as CSI-RS used in downlink  supports 32 .
+
 ![32](https://github.com/user-attachments/assets/c270484c-f699-4212-aa35-f6c6f9f659fc)
+
+![33](https://github.com/user-attachments/assets/e824328f-e106-486d-8f0a-abc602d75c8a)
+
+
+
+
+
+
+
+
+
+
 
