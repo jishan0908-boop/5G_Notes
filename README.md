@@ -562,3 +562,10 @@ In NR we have carries which are upto 100 MHz band width  , so this is a large ba
 
 ![30](https://github.com/user-attachments/assets/d34a8732-2670-4a9e-a82d-56fc7aaef0b4)
 
+## UPLINK SCHEDULING :
+
+* It is also loacted to the gNodeB . First we need to know the characterstics of the uplink link channel .also the buffer status has to be shared with the gNodeB.
+Based on this information the scheduler do the scheduling to the different devices .that we a particular devuces can transmite and what particular resources can be transmite . this scheduling in formation is known as scheduling grant .
+
+![32](https://github.com/user-attachments/assets/c270484c-f699-4212-aa35-f6c6f9f659fc)
+
