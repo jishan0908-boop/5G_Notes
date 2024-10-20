@@ -342,6 +342,56 @@ When the device configure to use a specfic QoS Flow and Uplink bearer through RR
 
 ![9](https://github.com/user-attachments/assets/1af742a0-6cce-4ad9-ba6f-2b56184c1a99)
 
+# PDCP ( PACKET DATA CONVERGENCE PROTOCOL ) :
+
+PDCP has four main function : 
+
+![1](https://github.com/user-attachments/assets/576a990b-822d-494f-a7d1-7e477bb754da)
+
+## 1. Header Compression   :
+
+The Compression Header is much more smaller than the orignal IP Header . The header compression schem in NR is based on RObust Header Compression (ROHC) Protocol . This is a standardize comprasion framework that used also , for other moblie communication technology .
+Example : The header compression and Dehaeder compression , therefore , they servers the purpose of reducing effective numbers of bits transmitted over the radio interface .
+
+![2](https://github.com/user-attachments/assets/cb1c6451-6405-4506-8002-9fd747a8ca26)
+
+
+## 2. Ciphering and Integrity protection :
+
+There are two acpects of security that the PDCP do :
+
+1. If someone is listing to the wirless channel and evasdropping there shoud not be able to decode the information transmited , so to counter this PDCP employs the Ciphering .
+2. It should be possible tp verify that the data orginated from the right source for this purpose it perform Integrity protection .
+
+## Ciphering :
+So , Ciphering is the process of taking incrypted information called , clear text or plane text and encrypte it into Ciphering text using a encryption key . The key text in NR is genrated using S input and encryption algorithm called NEA -> NR encryption algorithm . the most important input is key called , Krrc,enc wich is the security key used for algorithm ,  bearer etc.
+
+## Integrity Protection :
+When it comes to IP the data is not to modifiy the information , but to add a code to denominate the source for this purpose the NR uses the simpler system using algorithm called NIA -> NR Integrity algrithm .it uses the similar of input and create a MAC authentication code which is append to the message in the input to the key genration we have the key , called Krrc,int which is the important for the Integrity protection .
+
+![3](https://github.com/user-attachments/assets/e4773c6d-1cd4-4d8c-b11f-ce829cc0c714)
+
+
+##  3. Routing and Duplication :
+NR supports dual connectivity where  a mobile terminal can be simultaneously connected to , two servceing base station  eithere other NR or one NR and one LTU , in such cases the cell that is connected to the mobility management entity in the Core Network is called Master Cell and the cell that provide additional radio resouces is called the secondary cell . In order for the data to be sent over both base station is split bearer is used where the data is split into two data stream , one is transmited over to Master cell and other is to secondary cell . 
+
+The cells in such cases if we see the split bearer it is the PDCP , that is responsible for routing the data flow through different bearer to master cell nd secondary cell groups. In addition to using dual connectivity to achive more data rate , duplication can be used to send the exact same data to through two different bearer to improve the realiblity . In this way even if one of the path gets currupt the information canm be retrive from the other data bearer . This imprpove realiblity , it input the unerrorer packets from the one of the bearer which has no error this ability to select the multiple copies is called Selection diversity and is imporve the realiblity .
+
+
+![4](https://github.com/user-attachments/assets/db7ec12e-cd8e-4c6c-8919-c16040af35d2)
+
+## 4. In-sequence vs out-of-sequence delivery :
+
+If we see for some application like file transfering even if the packet store arrival at the excat same sequence it doesn't make . The TCP when is protocol function above the IP can takes caree of recoprding the packets is immediately forward to higher layers . 
+
+Some Appllication like video streaming the packet has to arrive in the exact sequence to be transmited . so such casesin PDCP can be configured for the sequence delivery in such case on the transmited side the PDCP acts as a sequence number to ensure the in sequqnce delivery .
+
+![5](https://github.com/user-attachments/assets/277a76a5-f819-4c6d-b5fc-a8fba1859e02)
+
+![6](https://github.com/user-attachments/assets/9edc1dc2-221d-46dd-bc3d-0e0847fa792a)
+
+
+
 
 
 
