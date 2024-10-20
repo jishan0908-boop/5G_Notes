@@ -580,7 +580,11 @@ Based on this information the scheduler do the scheduling to the different devic
 ![1](https://github.com/user-attachments/assets/193e972e-86bc-487d-9ba5-5fef1a471c1b)
 
 1. PBCH : This is used by devices to access the network.
-
+2. PDSCH : This the main channel for the data transmission , to the devices paging in information and data transfer .
+3. PDCCH : This is used for downlink control information .
+4. PUSCH : This is the main channel for data transmisstion form the device side.
+5. PUCCH : This is used by devices for Hybird ARQ acknowledegemnts indicating whether the data is reacive at the trasnport block sucessfully or not .
+6. PRACH : This is used for the random access processor 
 
 
 
