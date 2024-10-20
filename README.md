@@ -409,19 +409,54 @@ Different server has doifferent rquiremnet , eg transfer of a large file error f
 
 ## Segmentation :
 
+![9](https://github.com/user-attachments/assets/be820811-abff-482f-b552-da0d6d8e12e8)
+
+The sequence number to identify the different packets and it is important so that the feedback is recive abpout the if the rececption is succesful it is clear  which pdu was  or was not recive successfully .
+
+The transport block size changes at the TTA level if one or more RLC sdu  including the headers fit exactly  in to the excpexcted transport  block size  then there is no need for segmentation 
+
+On the other hand in this example the transport block has more spaces left if it is just padded with 0s it willl lead to inefficent use of spectrum . so when the size of transport block is np  then the third segement is split into two parts , in the case of segmentation each sdu carries the same sequence number as the orignal unsegemneted sdu which is the part of the header to distinguehed whether the pdu contain the complete sdu  or the first segment of the sdu  or the last segement of sdu , there is a field in the header that is called  segementation information which communicates which is the cases is true.
+
+Also a segmentation offset is iuncluded in all segement except the first one and ity is used to indicate  which bit of the sdu the current segement represent .
+In lte the pdu also concatenated into one big pdu . to do so device should know the exact transport size .
+
+![8](https://github.com/user-attachments/assets/f43ea3c8-5622-4aa3-a11b-ff6091ddb894)
 
 
+# Retransmission :
+
+![10](https://github.com/user-attachments/assets/958d3644-d2e8-431a-a043-bdff34d89382)
+
+![11](https://github.com/user-attachments/assets/e7d1615c-e64a-4438-93b5-ef77134bef77)
 
 
+Here pdu n+2 is forwarded to the pdcp layer without waiting for pdu n+1 .now pdu n+1 could be missing . 
+
+Eithere it is lost due to interfernce and lower layer are handling ARQ or on the other hand lower layers failed to detect the error ,
+here the ttransimition window has not chane compared to the perivour figure because none of the pdu n or higher have been acknowledeg by the reciver hence any of this pdu may still be necessary to be retransmiited and since the transmiter is not aware is the it have to be retransmited it is not updated the transmite window the reception window has not be updated because when pdu n+2 arrives pdu n+1 is still missing , so instead of updating the recipted window , it starts the timer called the reassembly timer . if the pdu n+1 is not recive before the timer expires then retransission is required and RLC takes care of the retransmission request .
+
+Duplicate detaction is also the responsility of the RLC , so if n+1 arrives in two copies ,then one of the cpopies is discarded 
+
+![12](https://github.com/user-attachments/assets/ea70e95b-527a-4592-82b6-169cef8ce132)
+
+![13](https://github.com/user-attachments/assets/74c42988-494a-4b5b-830a-324ffc4adfd8)
+
+![14](https://github.com/user-attachments/assets/d855a6d7-5124-49fa-a5ea-b5075f55f56c)
 
 
+T4 
+triggers the reciver  to send a control pdu containing a status report ,  indicating what are the missing pdus control pdus has the higher priorty than the data pdus  to avoid the status reports being unnecssary delyed .and the can make negative impact at the transmission dely . control packets which carries the buffer status reports has the the higher priorty .
 
+![15](https://github.com/user-attachments/assets/27d1e76b-2f7b-44b5-b834-1a0c29474e89)
 
+![16](https://github.com/user-attachments/assets/6c95a57d-b618-40ad-839e-494def769a15)
 
+T6 
+finally at time T6 all the transmission includeing n+5 has been successfully transmitted and has been successfully recive and acknowledgeto transmitor .Last packet n+5 contains a flag , when the last packet is arrived at the reciver end it send a feedback to the transmitoracknowleding that all the pdus are successfully recived
 
+![17](https://github.com/user-attachments/assets/e3f23265-c4f7-4fc4-ab83-909b548812e2)
 
-
-
+![18](https://github.com/user-attachments/assets/5cd4cdc2-cb03-4111-a275-fd45a584c87a)
 
 
 
