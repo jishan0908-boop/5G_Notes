@@ -689,4 +689,7 @@ The opreation of RRC flare  is guided by state machine , and it defines certain 
 Let say network would like to reach to the  device , know there are two possiblities if the network does not know where is the devices it has to  send message across
 the whole network this is very poor use of resources , on the other hand if the network know exactly which cell device is present it can to paging only in this cell , but for this the network should always track exaclty  which cell the device is present .and since the device is mobile we tracking it ti the percisly level, which required a lot of tracking updates . 
 
+![3](https://github.com/user-attachments/assets/e2ceec90-fc94-4ce1-ab37-c6d02417b460)
+
+![4](https://github.com/user-attachments/assets/dcbd4d17-036c-4d42-8c11-4a7ac0ba7aa7)
 
