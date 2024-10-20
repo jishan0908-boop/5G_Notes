@@ -586,6 +586,38 @@ Based on this information the scheduler do the scheduling to the different devic
 5. PUCCH : This is used by devices for Hybird ARQ acknowledegemnts indicating whether the data is reacive at the trasnport block sucessfully or not .
 6. PRACH : This is used for the random access processor 
 
+-DCI (downlink control information) : provides device with neccessary information for proper decoding and reception of downlink data UCI : provides the scheduler with informatipn about the situation at the device
+
+* requests retransmission if transport block is fully corrupted
+* crc length : 24 bits when payload > 3824 bit and 16 bits when < 38
+![2](https://github.com/user-attachments/assets/8ad3b474-0950-4f76-9e2d-a2b29b8de474)
+## LDPC :
+It uses a parameter called base graph ,that governce the coding processes , NR supports two ldpc base graph 
+1. For small transport blocks.
+2. For large transport blocks .
+![3](https://github.com/user-attachments/assets/15f71aab-4605-4e04-a7ff-f29084a0f1cc)
+
+## CODE BLOCK SEGMENTATION:
+So  , if the transport block is bigger than to this limit it has to be segmented into smaller blocks called code blocks.
+![4](https://github.com/user-attachments/assets/c576a05b-0a84-46d9-9ebc-fb3d513397cb)
+
+## LDPC CODING :
+LDPC coding helps in error correction , it is a proccess of adding additional bits , that improves the resiliency of the channel.
+![5](https://github.com/user-attachments/assets/4bc91c88-93c8-4fba-a7cb-54685fad7582)
+
+## RATE MATCHING :
+So after the ldpc coding process , rate matching takes the coded bits extract the exact set of bits that to be transmitted.
+![6](https://github.com/user-attachments/assets/d6d17d20-7fc2-4e2c-9fd5-f87b6adce3e5)
+
+## SCRAMBLING :
+![7](https://github.com/user-attachments/assets/aa172114-8004-4158-8678-8b0a4daee71b)
+
+## MODULATION :
+![8](https://github.com/user-attachments/assets/4f29978e-e21b-4d22-b8ec-9571a1591192)
+
+## LAYER MAPPING :
+![9](https://github.com/user-attachments/assets/ba4521aa-9768-49de-9a10-01b53e623d89)
+
 
 
 
