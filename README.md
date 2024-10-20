@@ -455,6 +455,73 @@ finally at time T6 all the transmission includeing n+5 has been successfully tra
 
 ![18](https://github.com/user-attachments/assets/5cd4cdc2-cb03-4111-a275-fd45a584c87a)
 
+# MAC ( MEDIUM ACCESS CONTROL ) LAYER :
+
+MAC has some four main function :
+
+1. Logical-cannel multiplexing 
+2. Hybrid-ARQ retransmissions
+3. Sheduling 
+4. Multiplexing / Demultiplexing for CA
+
+## Logical-cannel multiplexing
+The mac layer provides services to the RLC in the form of Logical channels and mac layer uses the services form th ephyisical layer in the form of transport channel .
+
+* A logical channel is defined by type of information it carries it is jounerly classified as a controlchannel used for the transmission of controland configuration information necessary for the operating the NRC system or as a traffic channel used for the user data . 
+
+* The transport channel is defined by how and with what characterstics the information is transmitted over radio interface. this includes paging , broadcaste , etc.
+
+![19](https://github.com/user-attachments/assets/bd808fc1-0fbb-4159-9112-786b308a7d22)
+
+
+## Different Logical Channel:
+
+1. PCCH : This is used for paging of the devices whose location or the cell level is not known  to the network . therefore paging mesaages must be transmitted into multiple cells.
+
+2. BCCU :This is used for transmission of system channelinformation from the network to all the deivces in a cell . 
+
+3. CCCH : This is used for the transmission of control information in counjunction with random access  proceses .
+
+4. DTCH : This is uesd for transmission of user data to one end of devices . this is typically used for transmission of all the unicaste  , uplink and downlink user data , so this handles much of the data traffics .
+
+5.DCCH :This is used for transmission of control information to one end from the devices , thischennel is uesd for individual configuration of devices , such as settings various parameters in the devices that supports the communication . 
+
+![20](https://github.com/user-attachments/assets/3025ef66-307a-46bd-8d94-0d4730e0a6d0)
+
+
+## Different Transport Channel :
+they are organised into transport blocks , in each transmission time interval atmost one transport block of the dynamic size is transmitted over the Radio interface two n from a devices.
+
+1. PCH :This is used for transmissionm of paging information from the pcch in the logical chennel. 
+
+2. BCH : This is used for transmission of the parts of pcch system information , more specifically called the master information .
+
+3. DL-SCH: This is main transport channel used for transmission of downlink data in NR .
+
+4. UL-SCH: This is used for the transmission of uplink data .
+
+5. RACH : This does not carry any transport blocks .
+
+In addition MAC layer can also add MAC Control element like MAC CE  into the transport blocks which is transmited over the transport channel .
+it is used for impact control signaling . 
+
+## Carrier Aggregation :
+
+
+When we use carrier aggreation the data is transfer to the multiple cells , in such cases the MAC entity  is responsible for the distribution of data for each flow 
+across the different componet carriers or cells .
+In the physical layer the each cell , the physical layer processing happened independently .
+
+## Hybrid-ARQ retransmissions :
+
+* IT is called hybird because it supports both error correcting in channel coding and retransmission , when the error cannot be correct, specifically the error correction process is taking care in physical layer and the retransmission are handle in MAC layer . The basic machanism is based on stop and wait protocol.
+that is the transmitor transmite the data unit and wait for feedback if the  recepition was sucessful . If there is no negative acknowledegment moreover then it is assume it is a sucesses and then transmit to the next data unit .if there is a negative acknowlegemnet then it retransmites the same pdu as before .however waiting for  the positive or negative feedback  will be very time consuming . 
+
+* So to make things more efficent NR are uses multiple stopping wait  process in parellel so each process transmiite the data unit and waits for feedback before taking on the next data unit . 
+
+* In 4G LTE uses Synchronous HARQ protocol , where the feedback to a certain process exactly a fixed time after it was transmitted , so in the case of LTE there isno need to expicitly say which process is a feedback is applicable for but having a precisous timing requirement is not helpful for the dynamic  sysytem that the NR supports so in NR instead of using a fix time between the transmission and feedback they are identify by the DCI channel this process is called Asynchronous HARQ Protocol.
+
+* In NR the trasport block can get wide large so if there is an error it is infecient for the wole transport block . To solve this problem there is a new idea. large transport blocks are divided into multiple core blocks suring the channel coding process in the physical layer and each of the core block has the coresponding crc to check if there is an error in the core block , so if the recive transport block is erroreous it could be adequate to resend only the core is not effective by the error but for that we should be able to exactly identify which core block neededs to be transmitted , so we need to assign an I'D to each core block and then transmite the I'D of the core block in the feedback . To aviod the over head a banch of code blocks are grouped  ,  so when ever there is an error only the code block gropu is effective by the error and can be retransmited . 
 
 
 
