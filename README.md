@@ -543,7 +543,22 @@ Offically a scgheduler is the part of MAC layer. but we treat is different entit
 
 ## DOWNLINK SCHEDULING :
 
+![25](https://github.com/user-attachments/assets/de405c91-4af4-49b4-915e-d354b9ea8ab5)
 
+![26](https://github.com/user-attachments/assets/7ae4da73-2b03-489c-91d1-9e6cd128e70e)
 
+* NR does not standardize  the exact logic to beused by the scheduler , it defines what are the supporting machnisim so the secheduler recommanded to use the channel conditions to use the buffer states etc . 
 
+![27](https://github.com/user-attachments/assets/99d7ac39-84a6-460c-a601-1fe1a2014ebd)
+
+* 
+In NR we have carries which are upto 100 MHz band width  , so this is a large bandwidth which is difficult to monitor. so for this purpose only the part of bandwidth is monitor with control channel .
+
+![28](https://github.com/user-attachments/assets/459f18f4-1cf3-4a99-9df0-9d92d20b0d8c)
+
+* In addition thieir is a one more feature of scheduler is preemption 
+
+![29](https://github.com/user-attachments/assets/c268e4ff-cf9b-49ac-9056-de744878ccd6)
+
+![30](https://github.com/user-attachments/assets/d34a8732-2670-4a9e-a82d-56fc7aaef0b4)
 
