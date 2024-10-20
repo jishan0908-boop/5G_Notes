@@ -629,3 +629,6 @@ After mapping different layers next , step is to map it to the corresponding vir
 ![12](https://github.com/user-attachments/assets/eb128973-f764-478d-9e69-ad6217c8d19f)
 
 
+# MODULATION SCHEME :
+First ,when it comes to the modulation scheme , it is important to support high data rates , because every new wireless techenology genration helps in support of higher and higher data rates .
+High data rates signals have high bandwidth , and white band signals are badly discarded by the channelbecause channel can have frequency selective trading in its charachterstics .
