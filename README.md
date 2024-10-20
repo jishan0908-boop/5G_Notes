@@ -673,7 +673,14 @@ on higher level each frames are identify by the system frame number (SFN)as for 
 
 ![1 8](https://github.com/user-attachments/assets/9d164f55-81a3-4341-b82b-e5970f637c58)
 
+# RRC AND NAS :
 
+
+The opreation of RRC flare  is guided by state machine , and it defines certain specific states that UE can be present in , In NR there are three states 
+1. RRC IDLE: it is primarly used soon after the device is power on or when the device first enter the coverage area of the network . there is no specific parameter for the communication in the device and the network.
+2. RRC Connected : the context is established and all the parameters necessary for the communication between the device and the radio access network are know both to the device and the network it data transfer to form device , every time the device goes from  RRC Idle to RRC connected 
+3. RRC Inactive : all the connection related  parameter are store and the device can going to power saving mode , so it can easily comeback to connected mode . 
+ 
 
 
 
