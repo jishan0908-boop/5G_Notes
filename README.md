@@ -632,3 +632,48 @@ After mapping different layers next , step is to map it to the corresponding vir
 # MODULATION SCHEME :
 First ,when it comes to the modulation scheme , it is important to support high data rates , because every new wireless techenology genration helps in support of higher and higher data rates .
 High data rates signals have high bandwidth , and white band signals are badly discarded by the channelbecause channel can have frequency selective trading in its charachterstics .
+
+![1 1](https://github.com/user-attachments/assets/1922699b-d020-48c3-b351-0edacbcbd39a)
+![1 2](https://github.com/user-attachments/assets/e3d3b3e5-af1f-4e41-ad6b-70746570b486)
+
+
+* SC-FDM : It also have some secheduling restriction , because of diffrence of carriers has to continously present  , it cannot be disconnected.
+* 
+![1 3](https://github.com/user-attachments/assets/ba7f5fdf-7a45-4a48-9bdf-aa23fd49ea8e)
+
+## Multiple Access scheme :
+* The choice of modulation scheme is directly decdates the multiple access scheme in NR . It refers to the concepts that defines how the different users can share the wirless channel .
+OFDM provides a very flexible MAS on both time and frequency domain.
+
+* DFT precoded OFDMA it has one major difference , here for a given user allotement of the resources have to be conitinouse .
+also it provide flexible allocation in both time and frequency domain.
+
+![1 4](https://github.com/user-attachments/assets/44d7e295-364c-46e3-a1cd-62dd84bad166)
+
+## FLEXIBLE NUMEROLOGY :
+* SCS : Sub carrrier spacing 
+* CP : Cyclic prefix
+
+![1 5](https://github.com/user-attachments/assets/54143103-8f9c-4bf3-a636-92dbffd3e87f)
+
+## TIME DOMAIN ;
+* NTR transmission are defines into frames and each frame has length of 10 ms , and  each frame is sub divided into sub frames of length of 1ms, these sub frames are furthere divided into slots and each slots have exactly 14 OFDM Symbols,
+on higher level each frames are identify by the system frame number (SFN)as for numerlogy increases the number of slots also increases.
+
+![1 6](https://github.com/user-attachments/assets/3eef5f0b-1c87-43d8-bec2-d836303a11ed)
+
+## RESOURCE ELEMENT AND RESOURCE BLOCK :
+* If we take one sub carrier of 1 ofdm symblol , it is called one resource element it is the smallestphysical resource.  
+* one resource block = 12 subcarriers .
+
+![1 7](https://github.com/user-attachments/assets/d389df77-486f-4b12-80c5-33f8210410a5)
+
+## Mini slots :
+* It simply a shorter diversion of a slot , it can contain , 2,4 or 7 ofdm symbols . it can begain in any boundary.
+
+![1 8](https://github.com/user-attachments/assets/9d164f55-81a3-4341-b82b-e5970f637c58)
+
+
+
+
+
