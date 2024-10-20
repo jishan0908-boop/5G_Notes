@@ -130,8 +130,6 @@ The rest of the core network function communicate with each other as a microserv
 
 ![second point](https://github.com/user-attachments/assets/686c22b7-0264-4ad9-929e-567f029bc662)
 
-
-
 Since,  5G uses services base architecture.
 We have different ends of devices using  5G network  on one end at the 5G user, Massive MTC is present , which are the large number of devices which send very little data, if these kind of devices are dominate the network then , there we have to scale control signals infrastucture . On the other hand we have Moblie Broadband devices which creates the large demands in the user plane functions because there is lot if data if , but there are only fewer devices , so these devices are dominating than we need to scale the user plane function not control plane signals . So if there is no separation in user and control plane functions , then we would end up scaling the loads handling to both user and control plane , which is inefficent way of scaling .
 We separate with the demanding of user or control plane function which one is  needed to scale. Separating these , give freedom to apply differnt function in different geographical region.
@@ -431,7 +429,7 @@ In lte the pdu also concatenated into one big pdu . to do so device should know 
 
 ![12](https://github.com/user-attachments/assets/ea70e95b-527a-4592-82b6-169cef8ce132)
 
-Here pdu n+2 is forwarded to the pdcp layer without waiting for pdu n+1 .now pdu n+1 could be missing . 
+> Here pdu n+2 is forwarded to the pdcp layer without waiting for pdu n+1 .now pdu n+1 could be missing . 
 
 Eithere it is lost due to interfernce and lower layer are handling ARQ or on the other hand lower layers failed to detect the error ,
 here the ttransimition window has not chane compared to the perivour figure because none of the pdu n or higher have been acknowledeg by the reciver hence any of this pdu may still be necessary to be retransmiited and since the transmiter is not aware is the it have to be retransmited it is not updated the transmite window the reception window has not be updated because when pdu n+2 arrives pdu n+1 is still missing , so instead of updating the recipted window , it starts the timer called the reassembly timer . if the pdu n+1 is not recive before the timer expires then retransission is required and RLC takes care of the retransmission request .
