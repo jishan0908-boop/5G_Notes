@@ -391,6 +391,23 @@ Some Appllication like video streaming the packet has to arrive in the exact seq
 ![6](https://github.com/user-attachments/assets/9edc1dc2-221d-46dd-bc3d-0e0847fa792a)
 
 
+# RLC RADIO LINK CONROL :
+
+RLC ( radio link control ) has two major function :
+
+1. Segmentation
+2. ARQ-Retransmissions
+
+RLC Modes :
+Different server has doifferent rquiremnet , eg transfer of a large file error free data , where as for the other application , eg streaming series a small amount of missing packet is not a problem , therefore it operate in three different mode .
+
+1. Transparent : RLC is completely transparent and essentially by pass . this mode is usefl for control plane broadcasting channel .
+2. Unacknowleged : This mode supports segmentation but not retransmition . This mode is used when error free delivery is not require voice or IP.
+3. Acknowleged : This is the main mode of operation for a downlink aashade channel and uplinkl shade channel , This mode is essentail for web browsing file transfer etc.
+   
+![7](https://github.com/user-attachments/assets/0de23c7d-f25c-4104-8154-22673c2dbf6b)
+
+## Segmentation :
 
 
 
