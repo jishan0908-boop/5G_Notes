@@ -741,7 +741,52 @@ it also refer as a RMSI : Remaining minimum system information it carries the cr
 * this include information like cells parameters or tsunami and earthquake parameters etc.
 * these sibs can be periodically broadcast like sib 1 or can be transmitted only on the demand bases , when neccessary .this implyes that the network can choose the periodic broad cast of these sibs in cells where no device is currently campain  therefore it imporve network energy  performance because there is no neccessary periodic transmissions once UE readed the MIB and SIB then it decide to camp or not .
 
+# RANDOM ACCESS:
+## RANDOM ACCESS PROCEDURE :
+It is trigger in different situation ,
+1. RRC Idle to RRC connected 
+2. Uplink Data 
+3. Sync lost
+4. Sync during Handover
 
+# CONTENTION BASED RANDOM ACCESS [CBRA]
+ This procedure is a four step process ,first step the device transmit  pramble RA to network , then network response to that by transmit the RA response and then we have step 3 and 4 together it make the possible to recognise if there has been any collision in the previous steps , if there is a collision it will try to resolve it .
+
+if successsful then message 4 is transfer the device to connected state once the device and network are in connected state then they can communicate in dedicated transmition .
+
+## Step 1 : Random Access Preamble :
+
+the UE selects a preamble randomly from a resoucres shared with all the othere UEs and transmittes the preamble.
+there are designated slots where UE can send the preamble called PRACH slots , since the device is in sync the system infpormation  it can alocate these slots and transmittesthe preamnnble to the appropiate places 
+
+
+## Step 2 : Random Access Response (RAR):
+once a device sended a RA preamble it wait for the RA response , this is the response from the network that it has properly recive the preamble . 
+
+
+## Step 3 : Scheduled Transmission / Contention Resolution :
+
+if the only device is doing RA then there is no collision , but if there is multiple devices that are doing RA at the same time then there are two possible cases :
+if the devices use different preamble then both get the different TC-RNTI so then they can be differnsated and no further collision .
+but there is a smalll chance that both devices access at the same time when the RAP select the exact same preamble , this case step two the both recives  exact same TC-RNTI ., this is the case of collision .
+SO in this step the device send what is called RRC connection step request message , in this it include rather unqiue identity called UE contention resolution identitu which is 48 it 
+
+## Step 4 : Contention Resolution Connection Setup :
+
+this step ensure that the device does not incorrectly used another devices duty .
+the message 4 is transmitted with a specfic address TC-RNTI , so we assume that the two devices has trsansmitted the exact same preamble in the step 1 , if they have done so then in step 2 the will recive same TC-RNTI , so both the devices will revice same message but the content of the message 4 will say what is unquie ID of the device for which the connection step complete  is valid , so even thoe they have same tempory ID in message 3 , we recall that the both the devices communitcated to the network what there unquie idenetity are and now the netwrok has pickup only one ID for which the connection set-up complete is valid so with this message we will know which devices has compelte the RA ,
+so it consider the RA is successsful and it upgrads the TC-RNTI TO C-RNTI , because know the device can be sure that no other device has the same Identity as .The other device consider it tha RA failure 
+
+for the successful device the device now enters the RRC Connective state , This can be consider as a completion of the RA procdure .
+
+
+# CONTENTION FREE RANDOM ACCESS:
+
+first we need to establish when CFRA is applicable :
+
+this is the three ste process:
+1. in this gNodeB is the trigger , therefor the first message is send from the gNodeB , the first step is the RA Preamble Assigment , the gNodeB will make sure that the device does not get the same preamble , so it picks the unqie preamble and assign its to the UE and ask ue to start the RA process 
+2. Here Ue makes the request of the RA preamble and because this is the unqiue request therfor gNodeB , give a RAR. 
 
 
 
