@@ -693,3 +693,56 @@ the whole network this is very poor use of resources , on the other hand if the 
 
 ![4](https://github.com/user-attachments/assets/dcbd4d17-036c-4d42-8c11-4a7ac0ba7aa7)
 
+# CHAPTER 3 :
+
+# INITIAL ACCESS :
+let pickup a 5G phone , and we turn it on , cell search and cell searching , is the first procedure  when we turn on the device , this allow the device to find the cell .
+
+
+## 5G CELL :
+so each Nr are cell is defined by a physical cell ID ,When a UE searches for a cell it is actually searching for the cell ID . The UE has to synchronise with the cell . 
+There ae two parts :
+1. Primary synchronization signal .
+2. Secondary Synchronization signal .
+
+The device need some basic  information about the cell to be able to communicate with cell , This is transmitted over the physical broadcast
+ channel .
+
+ ## CELL SEARCH PROCEDURE :
+
+ 1. Scan for PSS :
+* the first step is to detecte the PSS , in order to find a cell andthe corresponding cell ID The UE scan the known frequency bands .
+* In 4G in LTE there are tons of different band , so UE starts with scaning set of frequency band that is prefered . 
+* In LTE the SS is transmitted every 5ms .
+
+* NR supports more bands than LTE because it has a lot of band support in below 6 GHz , but it has more bands btw 24 and 52 GHz .
+
+
+* In NR the signals are transmitted in every 20 ms .
+* so for frequency band below 3GHz , 1.2 MHz synch raster is used , and for frequency band above 3 GHz , 1.4 MHz synch ratser is used .
+
+2. Scan for SSS :
+SSS can take 336 possoibe values ny detecting the SSS the device can determine the Physical ID  by using a simple formula :
+In SSS we also have 1008 different PCIs.
+
+3. Decode PBCH for MIB :
+the next step is to get the minimum system information . it carries basic information , for initial access and acquiring other information .
+it consist of MIB and SIB 1.
+SFN : System frame number .
+SCS : Subcarrier spacing .
+
+
+3. Decode SIB 1:
+it also refer as a RMSI : Remaining minimum system information it carries the critical information , required for the UE to access the cell .
+
+
+4. Other SIBs :
+* there also additional system information blocks called sib2 , sib3 etc. This include information that a device does not neccessary need to know before accessing the system .
+* this include information like cells parameters or tsunami and earthquake parameters etc.
+* these sibs can be periodically broadcast like sib 1 or can be transmitted only on the demand bases , when neccessary .this implyes that the network can choose the periodic broad cast of these sibs in cells where no device is currently campain  therefore it imporve network energy  performance because there is no neccessary periodic transmissions once UE readed the MIB and SIB then it decide to camp or not .
+
+
+
+
+
+
